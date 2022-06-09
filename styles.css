@@ -53,7 +53,7 @@ body {
     align-items:center;
     height:75%;
     width:30%;
-    outline:2px solid green;
+    /* outline:2px solid green; */
     justify-content:flex-start;
     flex-wrap:wrap;
     
@@ -126,7 +126,7 @@ img {
     height:500px;
     justify-content:center;
     align-items:center;
-    outline:2px solid red;
+    /* outline:2px solid red; */
 
     
     
@@ -141,14 +141,14 @@ img {
     height:75%;
     width:47.5%;
     align-items:flex-start;
-    outline:2px solid blue;
+    /* outline:2px solid blue; */
     flex-wrap:wrap
 
 }
 
 .random-info-title {
     display:flex;
-    outline:2px solid lightsalmon;
+    /* outline:2px solid lightsalmon; */
     width:100%;
     text-align: center;
     justify-content:center;
@@ -157,7 +157,7 @@ img {
 .random-info-block {
     display:flex;
     flex-direction:column;
-    outline:2px solid green;
+    /* outline:2px solid green; */
     padding:35px;
     flex-wrap:nowrap;
     align-items: center;
@@ -178,7 +178,7 @@ img {
 
 .random-info-text {
     display:flex;
-    outline:2px solid pink;
+    /* outline:2px solid pink; */
     font-weight:900;
     font-size:18px;
     width:150px;
@@ -189,5 +189,56 @@ img {
 }
 
 .quote-container {
-    display:flex
+    display:flex;
+    flex-direction:column;
+    height:500px;
+    background-color:#E5E7EB;
+    justify-content:center;
+    align-items:center;
+}
+
+.quote-block {
+    display:flex;
+    color:#1F2937;
+    font-size:36px;
+    font-weight:500;
+    font-style:italic;
+    justify-content: center;
+    height:max-content;
+    width:35%;
+    /* outline:2px solid red; */
+    align-items:center
+}
+
+.quote-name-block {
+    display:flex;
+    color:#1F2937;
+    width:30%;
+    height:max-content;
+    font-size:24px;
+    font-weight:900;
+    /* outline:2px solid yellow; */
+    justify-content: flex-end;
+    padding-top:8px
+
+}
+
+.signup-container {
+    display:flex;
+    height:500px;
+    background-color:white;
+
+}
+
+.signup-block {
+    display:flex;
+}
+
+.footer {
+    display:flex;
+}
+
+.footer-text {
+    display:flex;
+
 }
