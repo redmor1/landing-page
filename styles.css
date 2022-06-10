@@ -29,7 +29,7 @@ body {
     gap:36px;
     align-items: center;
     /* outline:2px solid green; */
-    width:90px;
+    min-width:90px;
     text-decoration: none;
     flex-wrap:nowrap;
     justify-content: center;
@@ -41,7 +41,7 @@ body {
     display:flex;
     background-color:#1F2937;
     color:#E5E7EB;
-    height:500px;
+    min-height:500px;
     justify-content:center;
     align-items:center;
 
@@ -51,11 +51,12 @@ body {
     display:flex;
     color:#E5E7EB;
     align-items:center;
-    height:75%;
-    width:30%;
+    min-height:75%;
+    max-width:30%;
     /* outline:2px solid green; */
     justify-content:flex-start;
     flex-wrap:wrap;
+    padding-right:20px;
     
     
 }
@@ -66,7 +67,7 @@ body {
     font-weight:900;
     font-size:48px;
     /* outline:2px solid orange; */
-    width:78%;
+    min-width:78%;
     flex-wrap:wrap;
     /* margin-bottom:-7.5%; */
     flex-shrink:1
@@ -78,7 +79,7 @@ body {
     color: #e5e7eb;
     font-size:18px;
     /* outline:2px solid red; */
-    width:100%;
+    min-width:100%;
     align-items:flex-start;
     text-align:start;
     flex-wrap:wrap;
@@ -117,16 +118,16 @@ body {
 
 img {
     width:250px;
-    height:auto
+    min-height:auto
 }
 
 .random-info-container {
     display:flex;
     background-color:#ffffff;
-    height:500px;
+    min-height:500px;
     justify-content:center;
     align-items:center;
-    /* outline:2px solid red; */
+    flex-shrink:1
 
     
     
@@ -138,20 +139,22 @@ img {
     font-size:36px;
     font-weight:900;
     justify-content: center;
-    height:75%;
-    width:47.5%;
+    min-height:75%;
+    max-width:47.5%;
     align-items:flex-start;
     /* outline:2px solid blue; */
-    flex-wrap:wrap
+    flex-wrap:wrap;
+    flex-basis:100%
 
 }
 
 .random-info-title {
     display:flex;
     /* outline:2px solid lightsalmon; */
-    width:100%;
+    min-width:100%;
     text-align: center;
     justify-content:center;
+    padding-top:20px
 }
 
 .random-info-block {
@@ -167,8 +170,8 @@ img {
 .random-info-img {
     display:flex;
     /* outline:2px solid red; */
-    width:150px;
-    height:150px;
+    min-width:150px;
+    min-height:150px;
     border-radius:12px;
     border:5px solid #3882F6;
     margin-bottom:10px;
@@ -181,7 +184,7 @@ img {
     /* outline:2px solid pink; */
     font-weight:900;
     font-size:18px;
-    width:150px;
+    min-width:150px;
     text-align:center;
     color:rgba(97, 92, 92, 0.863);
 /* text-shadow:1px 1px #e5e7eb */
@@ -191,7 +194,7 @@ img {
 .quote-container {
     display:flex;
     flex-direction:column;
-    height:500px;
+    min-height:500px;
     background-color:#E5E7EB;
     justify-content:center;
     align-items:center;
@@ -204,28 +207,31 @@ img {
     font-weight:500;
     font-style:italic;
     justify-content: center;
-    height:max-content;
-    width:35%;
+    min-height:max-content;
+    max-width:35%;
     /* outline:2px solid red; */
-    align-items:center
+    align-items:center;
+    padding-top: 20px;
 }
 
 .quote-name-block {
     display:flex;
     color:#1F2937;
-    width:30%;
-    height:max-content;
+    min-width:36%;
+    max-width:36%;
+    min-height:max-content;
     font-size:24px;
     font-weight:900;
     /* outline:2px solid yellow; */
     justify-content: flex-end;
-    padding-top:8px
+    padding-top:8px;
+    padding-bottom:20px
 
 }
 
 .signup-container {
     display:flex;
-    height:350px;
+    min-height:350px;
     background-color:white;
     justify-content:center;
     align-items: center;
@@ -237,17 +243,19 @@ img {
     flex-direction:row;
     /* outline:2px solid red; */
     background-color: #3882F6;
-    width:47.5%;
-    height:50%;
+    max-width:50%;
+    min-height:30%;
     align-items:center;
     justify-content: center;
     border-radius: 12px;
+    padding:30px
+    
 
 }
 
 .signup-title {
     display:flex;
-    font-size:38px;
+    font-size:30px;
     font-weight:900;
     color:#ffffff
     
@@ -256,7 +264,7 @@ img {
 .signup-text {
     display:flex;
     color:#e7e7e7;
-    font-size:18px;
+    font-size:14px;
     font-weight:900;
 }
 
@@ -266,8 +274,8 @@ img {
     font-weight:900;
     color:white;
     flex-direction: row;
-    width:70%;
-    height:65%;
+    min-width:70%;
+    min-height:65%;
     border-radius:10px;
     background-color: #3882F6;
     border:4px solid white;
@@ -281,8 +289,8 @@ img {
 .signup-title-text-container {
     display:flex;
     /* outline:2px solid green; */
-    height:80%;
-    width:45%;
+    min-height:80%;
+    min-width:45%;
     flex-direction:column;
     align-items:flex-start;
     justify-content:center;
@@ -294,8 +302,8 @@ img {
 .signup-button-container {
     display:flex;
     /* outline:2px solid purple; */
-    height:50%;
-    width:20%;
+    min-height:50%;
+    min-width:20%;
     justify-content:space-around;
     align-items:flex-end;
 }
@@ -305,8 +313,8 @@ img {
 .footer {
     display:flex;
     background-color: #1F2937;
-    height:125px;
-    width:auto;
+    min-height:125px;
+    min-width:auto;
     justify-content: center;
     align-items:center;
 }
